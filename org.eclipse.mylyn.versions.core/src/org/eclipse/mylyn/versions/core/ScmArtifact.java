@@ -11,17 +11,23 @@
 
 package org.eclipse.mylyn.versions.core;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.eclipse.core.runtime.IProgressMonitor;
+import org.eclipse.mylyn.versions.core.spi.ScmInfoAttributes;
 import org.eclipse.team.core.history.IFileRevision;
 
 /**
  * @author Steffen Pingel
  */
-public abstract class ScmArtifact {
+public abstract class ScmArtifact implements ScmInfoAttributes {
 
 	private final String id;
 
 	private final String path;
+
+	private final Map<String, String> fAtrributes = new HashMap<String, String>();
 
 	protected ScmArtifact(String id, String path) {
 		this.id = id;
@@ -42,4 +48,7 @@ public abstract class ScmArtifact {
 
 	public abstract IFileRevision[] getTargets(IProgressMonitor monitor);
 
+	public Map<String, String> getInfoAtrributes() {
+		return fAtrributes;
+	}
 }
