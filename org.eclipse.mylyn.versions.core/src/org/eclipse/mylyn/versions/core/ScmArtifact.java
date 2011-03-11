@@ -29,6 +29,13 @@ public abstract class ScmArtifact implements ScmInfoAttributes {
 
 	private final Map<String, String> fAtrributes = new HashMap<String, String>();
 
+	private String fProjName = null;
+
+	/**
+	 * Relative path to the associated project
+	 */
+	private String fProjectRelativePath = null;
+
 	protected ScmArtifact(String id, String path) {
 		this.id = id;
 		this.path = path;
@@ -51,4 +58,41 @@ public abstract class ScmArtifact implements ScmInfoAttributes {
 	public Map<String, String> getInfoAtrributes() {
 		return fAtrributes;
 	}
+
+	/**
+	 * Set the associated Project name
+	 * 
+	 * @param projName
+	 */
+	public void setProjectName(String projName) {
+		fProjName = projName;
+	}
+
+	/**
+	 * Set the relative path from the associated project
+	 * 
+	 * @param projRelPath
+	 */
+	public void setProjectRelativePath(String projRelPath) {
+		fProjectRelativePath = projRelPath;
+	}
+
+	/**
+	 * Get the associated Project name
+	 * 
+	 * @return
+	 */
+	public String getProjectName() {
+		return fProjName;
+	}
+
+	/**
+	 * Get the relative path from the associated project
+	 * 
+	 * @return
+	 */
+	public String getProjectRelativePath() {
+		return fProjectRelativePath;
+	}
+
 }
