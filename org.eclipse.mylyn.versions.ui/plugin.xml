@@ -2,5 +2,4 @@
 <?eclipse version="3.4"?>
 <plugin>
    <extension-point id="connectors" name="Scm Ui Connectors" schema="schema/connectors.exsd"/>
-
 </plugin>
