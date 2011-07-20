@@ -8,7 +8,7 @@
     <version>0.8.1-SNAPSHOT</version>
   </parent>
   <artifactId>org.eclipse.mylyn.git.core</artifactId>
-  <version>0.8.0.v20110608-1400</version>
+  <version>0.8.1.v20110720-0100</version>
   <packaging>eclipse-plugin</packaging>
   <build>
     <plugins>
