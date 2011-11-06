@@ -5,10 +5,10 @@
   <parent>
     <artifactId>mylyn-versions-parent</artifactId>
     <groupId>org.eclipse.mylyn.versions</groupId>
-    <version>0.8.3-SNAPSHOT</version>
+    <version>0.8.4-SNAPSHOT</version>
   </parent>
   <groupId>org.eclipse.mylyn.versions</groupId>
   <artifactId>org.eclipse.mylyn.versions</artifactId>
-  <version>0.8.3-SNAPSHOT</version>
+  <version>0.8.4-SNAPSHOT</version>
   <packaging>eclipse-feature</packaging>
 </project>
